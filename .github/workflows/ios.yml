@@ -1,4 +1,4 @@
-name: Build iOS (chưa ký)
+name: Build iOS unsigned
 
 # Chỉ chạy khi bấm tay: Actions → "Build iOS (chưa ký)" → Run workflow
 on:
