@@ -1,0 +1,225 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Pinkoo Stride",
+  "@appTitle": { "description": "App name shown in the task switcher" },
+  "appTagline": "activity journal",
+
+  "retry": "Retry",
+  "cancel": "Cancel",
+  "close": "Close",
+  "save": "Save",
+  "copy": "Copy",
+  "copied": "Copied",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "errorNetwork": "No internet connection. Please check your network.",
+  "errorServer": "The server is having trouble. Please try again later.",
+  "errorUnauthorized": "Your session has expired. Please sign in again.",
+  "errorInvalidCredentials": "Incorrect email or password",
+  "errorInvalidCurrentPassword": "Current password is incorrect",
+  "errorWeakPassword": "Password is too weak",
+  "pageNotFound": "Page not found",
+  "networkOffline": "No internet connection",
+  "networkReconnected": "Back online",
+  "showPassword": "Show password",
+  "hidePassword": "Hide password",
+  "validationRequired": "This field is required",
+  "validationEmail": "Please enter a valid email",
+  "validationPasswordLength": "Must be at least {min} characters",
+  "@validationPasswordLength": {
+    "placeholders": { "min": { "type": "int" } }
+  },
+  "validationPasswordMismatch": "Passwords do not match",
+  "validationPasswordSame": "New password must be different from the current one",
+
+  "navFeed": "Feed",
+  "navRecord": "Record",
+  "navProfile": "Profile",
+
+  "modeRun": "Run",
+  "modeWalk": "Walk",
+  "modeSwim": "Swim",
+  "modeRide": "Ride",
+  "modePickerTitle": "What are you doing today?",
+  "modePickerSubtitle": "Pick a mode and tap Start — GPS records your route automatically.",
+
+  "recordStart": "Start",
+  "recordPause": "Pause",
+  "recordResume": "Resume",
+  "recordFinish": "Finish & save",
+  "recordHoldToFinish": "Hold 2 seconds to finish",
+  "recordDiscard": "Discard this session",
+  "recordDiscardConfirm": "Discard the session being recorded? The data will be lost.",
+  "recordSaved": "Activity saved",
+  "recordTooShort": "This session is too short to save (under {meters} m)",
+  "@recordTooShort": {
+    "placeholders": { "meters": { "type": "int" } }
+  },
+
+  "gpsSearching": "Looking for GPS…",
+  "gpsWeak": "Weak GPS signal",
+  "gpsReady": "GPS good",
+
+  "permissionLocationTitle": "Location permission needed",
+  "permissionLocationBody": "Pinkoo Stride uses GPS to draw your route and compute distance and pace. Without it, activities cannot be recorded.",
+  "permissionBackgroundTitle": "Allow all the time to record with the screen off",
+  "permissionBackgroundBody": "Choose \"Allow all the time\" so recording continues when the screen is off or you switch apps. It still works otherwise, but parts of the route may be missing.",
+  "permissionGrant": "Grant permission",
+  "permissionOpenSettings": "Open settings",
+  "permissionDeniedForever": "Location permission is blocked. Open system settings to re-enable it.",
+  "locationServiceOff": "Location services are off. Turn on GPS and try again.",
+
+  "recoverTitle": "Recover the session in progress?",
+  "recoverBody": "The app closed while recording {mode} — {distance}, {duration}.",
+  "@recoverBody": {
+    "placeholders": {
+      "mode": { "type": "String" },
+      "distance": { "type": "String" },
+      "duration": { "type": "String" }
+    }
+  },
+  "recoverContinue": "Keep recording",
+  "recoverSave": "Save it",
+  "recoverDiscard": "Discard",
+
+  "statDistance": "Distance",
+  "statTime": "Time",
+  "statPace": "Pace",
+  "statAvgPace": "Avg pace",
+  "statAvgSpeed": "Avg speed",
+  "statMovingTime": "Moving time",
+  "statCalories": "Calories (est.)",
+  "statGpsPoints": "GPS points",
+  "statFastestSplit": "Fastest split",
+  "statElevation": "Elevation gain",
+
+  "unitKm": "km",
+  "unitM": "m",
+  "unitPerKm": "/km",
+  "unitPer100m": "/100m",
+  "unitKmh": "km/h",
+  "unitKcal": "kcal",
+
+  "mapStyleStreets": "Streets",
+  "mapStyleSatellite": "Satellite",
+  "mapStyleOutdoors": "Outdoors",
+  "mapStyleDark": "Dark",
+  "mapStyleLabel": "Map style",
+
+  "feedMockBadge": "friends are sample data",
+  "historyTitle": "Your activities",
+  "historyEmpty": "No activities yet.",
+  "historyEmptyHint": "Tap Record in the bottom bar to start your first session.",
+
+  "splitsTitle": "{distance} splits",
+  "@splitsTitle": {
+    "placeholders": { "distance": { "type": "String" } }
+  },
+  "splitsHint": "Longer bar = faster.",
+  "splitsBest": "Fastest split",
+  "splitsOther": "Other splits",
+  "splitsRemainder": "+ final {meters} m in {duration}",
+  "@splitsRemainder": {
+    "placeholders": {
+      "meters": { "type": "String" },
+      "duration": { "type": "String" }
+    }
+  },
+
+  "replayPlay": "Replay",
+  "replayPause": "Pause",
+
+  "shareTitle": "Share",
+  "shareGpx": "Export .gpx file",
+  "shareGpxDone": "GPX file created",
+  "shareStory": "Instagram Story",
+  "shareImage": "Share image",
+  "shareCopyCaption": "Copy caption",
+  "shareCardStylePink": "Pink",
+  "shareCardStyleOcean": "Ocean",
+  "shareCardStyleMap": "Map",
+  "shareInstagramMissing": "Instagram isn't installed — using the normal share sheet.",
+  "shareStoryUnavailable": "No Facebook App ID configured, so Story sharing isn't direct. Opened the normal share sheet.",
+
+  "activityTitleRun": "{part} run",
+  "@activityTitleRun": {
+    "placeholders": { "part": { "type": "String" } }
+  },
+  "dayPartMorning": "Morning",
+  "dayPartNoon": "Midday",
+  "dayPartAfternoon": "Afternoon",
+  "dayPartEvening": "Evening",
+
+  "settingsTitle": "Settings",
+  "appearance": "Appearance",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "language": "Language",
+  "languageSystem": "Device language",
+  "profileWeight": "Weight (for calorie estimate)",
+  "profileWeightUnit": "kg",
+"activityRename": "Rename",
+  "activityRenameTitle": "Rename activity",
+  "activityRenameEmpty": "Title cannot be empty",
+  "activityDelete": "Delete activity",
+  "activityDeleteConfirm": "Delete “{title}”? Every GPS point from this session goes with it and cannot be recovered.",
+  "@activityDeleteConfirm": {
+    "placeholders": { "title": { "type": "String" } }
+  },
+  "activityDeleted": "Activity deleted",
+  "activityNote": "Note",
+  "activityNoteAdd": "Add a note",
+  "activityNoteHint": "How it felt, the weather, who you went with…",
+
+  "autoPauseTitle": "Auto-pause",
+  "autoPauseSubtitle": "Subtract time spent standing still to see your moving pace.",
+  "autoPauseNone": "Nothing in this session stood still long enough to subtract.",
+  "autoPauseNote": "Recomputed for reference — the original record is untouched.",
+  "autoPauseDelta": "{before} → {after} (−{diff})",
+  "@autoPauseDelta": {
+    "placeholders": {
+      "before": { "type": "String" },
+      "after": { "type": "String" },
+      "diff": { "type": "String" }
+    }
+  },
+"recordLock": "Lock screen",
+  "recordLocked": "Screen locked",
+  "recordUnlock": "Unlock",
+  "recordUnlockHint": "Hold 2 seconds to unlock",
+  "recordLockWhySwim": "Water and knocks press buttons by themselves — lock it and forget it.",
+"backupSection": "Backup",
+  "backupExport": "Export a backup",
+  "backupExportHint": "One .zip with every activity, your notes, and a .gpx per session.",
+  "backupExportDone": "Exported {count} activities · {size}",
+  "@backupExportDone": {
+    "placeholders": { "count": { "type": "int" }, "size": { "type": "String" } }
+  },
+  "backupEmpty": "Nothing recorded yet to back up.",
+  "backupRestore": "Restore from a file",
+  "backupRestoreHint": "Pick a .zip you exported earlier.",
+  "backupPlanTitle": "Restore data",
+  "backupPlanSummary": "{fresh} new, {dup} already on this phone.",
+  "@backupPlanSummary": {
+    "placeholders": { "fresh": { "type": "int" }, "dup": { "type": "int" } }
+  },
+  "backupSkipDuplicates": "Skip duplicates",
+  "backupImportAll": "Import all",
+  "backupRestored": "Added {count} activities",
+  "@backupRestored": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "backupNothingNew": "Nothing new to add.",
+  "backupSettingsKept": "Settings in the file are not applied — only activities are restored.",
+  "backupBadFile": "Could not read the file: {reason}",
+  "@backupBadFile": {
+    "placeholders": { "reason": { "type": "String" } }
+  },
+"splitAlertSection": "Split alerts",
+  "splitAlertHint": "Alerts you at every kilometre, or every 100 m when swimming.",
+  "splitAlertOff": "Off",
+  "splitAlertHaptic": "Haptics",
+  "splitAlertVoice": "Speech",
+  "splitAlertVoiceNote": "Speech needs your phone Vietnamese voice pack; pick Haptics for swimming."
+}

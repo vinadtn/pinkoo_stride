@@ -1,0 +1,57 @@
+name: Build iOS (chưa ký)
+
+# Chỉ chạy khi bấm tay: Actions → "Build iOS (chưa ký)" → Run workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  ios:
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.5'
+          channel: stable
+          cache: true
+
+      - name: Cài thư viện Dart
+        run: flutter pub get
+
+      - name: Sinh code (drift, l10n)
+        run: |
+          dart run build_runner build --delete-conflicting-outputs
+          flutter gen-l10n
+
+      # CocoaPods cần token này để tải Mapbox iOS SDK
+      - name: Cấu hình tải Mapbox SDK
+        env:
+          MAPBOX_DOWNLOADS_TOKEN: ${{ secrets.MAPBOX_DOWNLOADS_TOKEN }}
+        run: |
+          printf 'machine api.mapbox.com\nlogin mapbox\npassword %s\n' "$MAPBOX_DOWNLOADS_TOKEN" > ~/.netrc
+          chmod 600 ~/.netrc
+
+      - name: Tạo env.json từ secrets
+        env:
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+          FB_APP_ID: ${{ secrets.FB_APP_ID }}
+        run: |
+          jq -n --arg m "$MAPBOX_TOKEN" --arg f "$FB_APP_ID" \
+            '{MAPBOX_TOKEN:$m, FB_APP_ID:$f, REPLAY_GPX:"false"}' > env.json
+
+      - name: Build iOS (không ký)
+        run: flutter build ios --release --no-codesign --dart-define-from-file=env.json
+
+      - name: Đóng gói IPA
+        run: |
+          rm -rf Payload && mkdir Payload
+          cp -R build/ios/iphoneos/Runner.app Payload/
+          zip -qry pinkoo_stride.ipa Payload
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pinkoo_stride-ios-unsigned
+          path: pinkoo_stride.ipa
+          retention-days: 7

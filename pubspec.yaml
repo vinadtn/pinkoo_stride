@@ -1,0 +1,93 @@
+name: pinkoo_stride
+description: "Pinkoo Stride — nhật ký vận động (Chạy · Đi bộ · Bơi · Đạp xe). Clean Architecture (feature-first) + BLoC + go_router + gen-l10n."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: ^9.1.1
+  equatable: ^3.0.0
+
+  # Navigation
+  go_router: ^18.0.2
+
+  # Dependency injection (service locator)
+  get_it: ^9.3.0
+
+  # Network — chưa có BE, nhưng giữ sẵn chỗ cắm
+  dio: ^5.11.1
+  connectivity_plus: ^7.3.2
+  internet_connection_checker_plus: ^3.1.2
+
+  # Local storage
+  shared_preferences: ^2.5.5
+  flutter_secure_storage: ^11.2.0
+
+  # DB local — nguồn dữ liệu chính của app khi chưa có BE
+  drift: ^2.35.1
+  sqlite3: ^3.7.0
+  path_provider: ^2.1.6
+  path: ^1.9.1
+
+  # Bản đồ vector (đường / vệ tinh / ngoài trời / tối)
+  mapbox_maps_flutter: ^3.0.0
+
+  # GPS
+  geolocator: ^14.0.1
+  # Chia sẻ: file .gpx + ảnh story
+  share_plus: ^13.3.1
+  http: ^1.6.0
+
+  # i18n / format số - ngày tháng
+  intl: ^0.20.3
+
+  # Logging
+  logger: ^2.8.0
+
+  # Font Baloo 2 (tiêu đề) + Be Vietnam Pro (nội dung) — y như prototype
+  google_fonts: ^9.0.0
+  cupertino_icons: ^1.0.8
+  xml: ^7.1.0
+  archive: ^4.3.0
+  file_picker: ^13.1.0
+  flutter_foreground_task: ^11.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  bloc_test: ^10.0.0
+  mocktail: ^1.0.5
+  drift_dev: ^2.35.1
+  build_runner: ^2.16.1
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  # Sinh code đa ngôn ngữ từ file .arb (cấu hình trong l10n.yaml)
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/data/
+
+# Sinh icon launcher từ mascot: `dart run flutter_launcher_icons`
+# Chạy lại khi đổi assets/images/pinkoo.png.
+flutter_launcher_icons:
+  image_path: assets/images/pinkoo.png
+  android: ic_launcher
+  # Android 8+ dùng adaptive icon: mascot nằm trên nền hồng nhạt (--pink-soft),
+  # nền phải phủ kín vì hệ thống cắt theo hình dạng của từng launcher.
+  adaptive_icon_background: '#FFE0E8'
+  adaptive_icon_foreground: assets/images/pinkoo.png
+  ios: true
+  # App Store không nhận icon có alpha.
+  remove_alpha_ios: true

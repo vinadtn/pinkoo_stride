@@ -1,0 +1,224 @@
+{
+  "@@locale": "vi",
+
+  "appTitle": "Pinkoo Stride",
+  "appTagline": "nhật ký vận động",
+
+  "retry": "Thử lại",
+  "cancel": "Huỷ",
+  "close": "Đóng",
+  "save": "Lưu",
+  "copy": "Sao chép",
+  "copied": "Đã sao chép",
+  "errorGeneric": "Có lỗi xảy ra. Vui lòng thử lại.",
+  "errorNetwork": "Không có kết nối mạng. Kiểm tra lại đường truyền.",
+  "errorServer": "Server đang gặp sự cố. Thử lại sau nhé.",
+  "errorUnauthorized": "Phiên đăng nhập đã hết hạn. Đăng nhập lại.",
+  "errorInvalidCredentials": "Email hoặc mật khẩu không đúng",
+  "errorInvalidCurrentPassword": "Mật khẩu hiện tại không đúng",
+  "errorWeakPassword": "Mật khẩu quá yếu",
+  "pageNotFound": "Không tìm thấy trang",
+  "networkOffline": "Mất kết nối mạng",
+  "networkReconnected": "Đã kết nối lại",
+  "showPassword": "Hiện mật khẩu",
+  "hidePassword": "Ẩn mật khẩu",
+  "validationRequired": "Không được để trống",
+  "validationEmail": "Email không hợp lệ",
+  "validationPasswordLength": "Cần ít nhất {min} ký tự",
+  "@validationPasswordLength": {
+    "placeholders": { "min": { "type": "int" } }
+  },
+  "validationPasswordMismatch": "Mật khẩu nhập lại không khớp",
+  "validationPasswordSame": "Mật khẩu mới phải khác mật khẩu cũ",
+
+  "navFeed": "Bảng tin",
+  "navRecord": "Ghi",
+  "navProfile": "Hồ sơ",
+
+  "modeRun": "Chạy",
+  "modeWalk": "Đi bộ",
+  "modeSwim": "Bơi",
+  "modeRide": "Đạp xe",
+  "modePickerTitle": "Hôm nay vận động gì?",
+  "modePickerSubtitle": "Chọn chế độ rồi bấm Bắt đầu — GPS sẽ tự ghi đường bạn đi.",
+
+  "recordStart": "Bắt đầu",
+  "recordPause": "Tạm dừng",
+  "recordResume": "Tiếp tục",
+  "recordFinish": "Dừng & lưu",
+  "recordHoldToFinish": "Giữ 2 giây để dừng",
+  "recordDiscard": "Bỏ buổi này",
+  "recordDiscardConfirm": "Bỏ buổi đang ghi? Dữ liệu sẽ mất.",
+  "recordSaved": "Đã lưu hoạt động",
+  "recordTooShort": "Buổi này quá ngắn để lưu (dưới {meters} m)",
+  "@recordTooShort": {
+    "placeholders": { "meters": { "type": "int" } }
+  },
+
+  "gpsSearching": "Đang tìm tín hiệu GPS…",
+  "gpsWeak": "Tín hiệu GPS yếu",
+  "gpsReady": "GPS tốt",
+
+  "permissionLocationTitle": "Cần quyền vị trí",
+  "permissionLocationBody": "Pinkoo Stride dùng GPS để vẽ đường bạn đã đi và tính quãng đường, pace. Không có quyền này thì không ghi được hoạt động.",
+  "permissionBackgroundTitle": "Cho phép luôn để ghi khi tắt màn hình",
+  "permissionBackgroundBody": "Chọn \"Cho phép mọi lúc\" để app ghi tiếp khi bạn tắt màn hình hoặc mở app khác. Không chọn cũng ghi được, nhưng có thể mất đoạn giữa.",
+  "permissionGrant": "Cấp quyền",
+  "permissionOpenSettings": "Mở cài đặt",
+  "permissionDeniedForever": "Quyền vị trí đang bị chặn. Mở cài đặt hệ thống để bật lại.",
+  "locationServiceOff": "Dịch vụ vị trí đang tắt. Bật GPS rồi thử lại.",
+
+  "recoverTitle": "Phục hồi buổi đang ghi?",
+  "recoverBody": "App đã tắt giữa lúc đang ghi {mode} — {distance}, {duration}.",
+  "@recoverBody": {
+    "placeholders": {
+      "mode": { "type": "String" },
+      "distance": { "type": "String" },
+      "duration": { "type": "String" }
+    }
+  },
+  "recoverContinue": "Ghi tiếp",
+  "recoverSave": "Lưu lại",
+  "recoverDiscard": "Bỏ",
+
+  "statDistance": "Quãng đường",
+  "statTime": "Thời gian",
+  "statPace": "Pace",
+  "statAvgPace": "Pace TB",
+  "statAvgSpeed": "Tốc độ TB",
+  "statMovingTime": "Thời gian di chuyển",
+  "statCalories": "Calo ước tính",
+  "statGpsPoints": "Điểm GPS",
+  "statFastestSplit": "Chặng nhanh nhất",
+  "statElevation": "Độ cao tăng",
+
+  "unitKm": "km",
+  "unitM": "m",
+  "unitPerKm": "/km",
+  "unitPer100m": "/100m",
+  "unitKmh": "km/h",
+  "unitKcal": "kcal",
+
+  "mapStyleStreets": "Đường",
+  "mapStyleSatellite": "Vệ tinh",
+  "mapStyleOutdoors": "Ngoài trời",
+  "mapStyleDark": "Tối",
+  "mapStyleLabel": "Kiểu bản đồ",
+
+  "feedMockBadge": "bạn bè là dữ liệu mẫu",
+  "historyTitle": "Hoạt động của bạn",
+  "historyEmpty": "Chưa có hoạt động nào.",
+  "historyEmptyHint": "Bấm Ghi ở thanh dưới để bắt đầu buổi đầu tiên.",
+
+  "splitsTitle": "Chặng {distance}",
+  "@splitsTitle": {
+    "placeholders": { "distance": { "type": "String" } }
+  },
+  "splitsHint": "Thanh dài hơn = đi nhanh hơn.",
+  "splitsBest": "Chặng nhanh nhất",
+  "splitsOther": "Các chặng còn lại",
+  "splitsRemainder": "+ {meters} m cuối trong {duration}",
+  "@splitsRemainder": {
+    "placeholders": {
+      "meters": { "type": "String" },
+      "duration": { "type": "String" }
+    }
+  },
+
+  "replayPlay": "Xem lại",
+  "replayPause": "Dừng",
+
+  "shareTitle": "Chia sẻ",
+  "shareGpx": "Xuất file .gpx",
+  "shareGpxDone": "Đã tạo file .gpx",
+  "shareStory": "Instagram Story",
+  "shareImage": "Chia sẻ ảnh",
+  "shareCopyCaption": "Sao chép chú thích",
+  "shareCardStylePink": "Hồng",
+  "shareCardStyleOcean": "Biển",
+  "shareCardStyleMap": "Bản đồ",
+  "shareInstagramMissing": "Chưa cài Instagram — dùng chia sẻ thường nhé.",
+  "shareStoryUnavailable": "Chưa cấu hình Facebook App ID nên không đẩy thẳng sang Story. Đã mở chia sẻ thường.",
+
+  "activityTitleRun": "Buổi chạy {part}",
+  "@activityTitleRun": {
+    "placeholders": { "part": { "type": "String" } }
+  },
+  "dayPartMorning": "sáng",
+  "dayPartNoon": "trưa",
+  "dayPartAfternoon": "chiều",
+  "dayPartEvening": "tối",
+
+  "settingsTitle": "Cài đặt",
+  "appearance": "Giao diện",
+  "themeSystem": "Hệ thống",
+  "themeLight": "Sáng",
+  "themeDark": "Tối",
+  "language": "Ngôn ngữ",
+  "languageSystem": "Theo thiết bị",
+  "profileWeight": "Cân nặng (để tính calo)",
+  "profileWeightUnit": "kg",
+"activityRename": "Đổi tên",
+  "activityRenameTitle": "Đổi tên hoạt động",
+  "activityRenameEmpty": "Tên không được để trống",
+  "activityDelete": "Xoá hoạt động",
+  "activityDeleteConfirm": "Xoá “{title}”? Toàn bộ điểm GPS của buổi này mất theo và không lấy lại được.",
+  "@activityDeleteConfirm": {
+    "placeholders": { "title": { "type": "String" } }
+  },
+  "activityDeleted": "Đã xoá hoạt động",
+  "activityNote": "Ghi chú",
+  "activityNoteAdd": "Thêm ghi chú",
+  "activityNoteHint": "Cảm giác thế nào, thời tiết, đi cùng ai…",
+
+  "autoPauseTitle": "Tự động tạm dừng",
+  "autoPauseSubtitle": "Trừ bớt thời gian đứng yên để xem pace thực lúc đang di chuyển.",
+  "autoPauseNone": "Buổi này không có lúc nào đứng yên đủ lâu để trừ.",
+  "autoPauseNote": "Số liệu tính lại để tham khảo — bản ghi gốc không bị sửa.",
+  "autoPauseDelta": "{before} → {after} (−{diff})",
+  "@autoPauseDelta": {
+    "placeholders": {
+      "before": { "type": "String" },
+      "after": { "type": "String" },
+      "diff": { "type": "String" }
+    }
+  },
+"recordLock": "Khoá màn hình",
+  "recordLocked": "Màn hình đang khoá",
+  "recordUnlock": "Mở khoá",
+  "recordUnlockHint": "Giữ 2 giây để mở khoá",
+  "recordLockWhySwim": "Nước và va chạm hay bấm nhầm — khoá lại cho yên tâm.",
+"backupSection": "Sao lưu",
+  "backupExport": "Xuất file sao lưu",
+  "backupExportHint": "Một file .zip gồm toàn bộ hoạt động, ghi chú, và một file .gpx cho mỗi buổi.",
+  "backupExportDone": "Đã xuất {count} hoạt động · {size}",
+  "@backupExportDone": {
+    "placeholders": { "count": { "type": "int" }, "size": { "type": "String" } }
+  },
+  "backupEmpty": "Chưa có hoạt động nào để sao lưu.",
+  "backupRestore": "Khôi phục từ file",
+  "backupRestoreHint": "Chọn file .zip đã sao lưu trước đó.",
+  "backupPlanTitle": "Nạp lại dữ liệu",
+  "backupPlanSummary": "{fresh} buổi mới, {dup} buổi đã có trong máy.",
+  "@backupPlanSummary": {
+    "placeholders": { "fresh": { "type": "int" }, "dup": { "type": "int" } }
+  },
+  "backupSkipDuplicates": "Bỏ qua trùng",
+  "backupImportAll": "Thêm hết",
+  "backupRestored": "Đã thêm {count} hoạt động",
+  "@backupRestored": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "backupNothingNew": "Không có buổi nào mới để thêm.",
+  "backupSettingsKept": "Cài đặt trong file không bị áp lại — chỉ hoạt động được khôi phục.",
+  "backupBadFile": "Không đọc được file: {reason}",
+  "@backupBadFile": {
+    "placeholders": { "reason": { "type": "String" } }
+  },
+"splitAlertSection": "Báo chặng",
+  "splitAlertHint": "Báo mỗi khi xong 1 km, hoặc 100 m khi bơi.",
+  "splitAlertOff": "Tắt",
+  "splitAlertHaptic": "Rung",
+  "splitAlertVoice": "Giọng nói",
+  "splitAlertVoiceNote": "Giọng nói cần gói tiếng Việt của máy; bơi thì nên chọn Rung."
+}
